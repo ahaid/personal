@@ -1,3 +1,12 @@
 #cloud-config
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDm78N+Xx522Xea1d2ybPepKlY8iYvuCAcTcJdrGwc64oah9twO1YTaN7bCvdjaDkpTUeUMOBI2SYD3L4PnDOg/uGtmDtnxbB+0W3ovmlzXVtnOznEEv8LKByac6kJif3MBavdRAZ8uMfsexxj+/2nebme4sP/qFzRhtKRUFkZ67ytdxaTfaY5O++D3bW4u98RFXfEjL7cCvRF0pzvu6g8Kd/0wFq2M0cSjDRgpgUvOiaD3vEgHLHJ1ot0X1YBa9PA+R68m3+PrpzArXcid2GSGHU8BlFiaVUNkSOhFPFry8Ut7hm3ZHSe7J+bXXw73+P+wU9wY6+q7xsW+yMnIamfR ahaid@ahaid-lt.users.solidfire.net
+hostname: rancher-server
+rancher:
+  network:
+    interfaces:
+      eth0:
+        address: 10.117.226.216
+        gateway: 10.117.227.254
+        mtu: 1500
+        dhcp: false
